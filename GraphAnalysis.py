@@ -87,7 +87,7 @@ def rivals_algo(graph):
                 current.team = "Heel"
             if rivalHeel:
                 current.team = "Babyface"
-            # add all unclassified nodes adjacent to current to bag
+            # add all unclassified nodes that are adjacent to current to bag
             for r in current_rivals:
                 if r.team is None:
                     bag.add(r)
